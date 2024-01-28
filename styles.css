@@ -1,0 +1,91 @@
+:root {
+  --color-primary: #342727;
+  --btn-color: #644d50;
+  --btn-accion: #ab630c;
+  --btn-igual: #2b734a;
+  --input-color: #808d52;
+  --text-color: #fff;
+  --background: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  background-color: var(--background);
+}
+
+.calculadora {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  max-width: 400px;
+  padding: 20px;
+  background-color: var(--color-primary);
+  box-shadow: 10px 10px 10px;
+}
+
+.calculadora_header {
+  text-align: center;
+  font-size: 40px;
+  color: var(--text-color);
+}
+
+.calculadora-input {
+  height: 100px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 60px;
+  border-radius: 10px;
+  font-weight: 800;
+  background-color: var(--input-color);
+}
+
+.containerBtn {
+  display: grid;
+  grid-template-columns: 3fr 70px;
+  justify-content: center;
+}
+
+.calculadora_btn_container {
+  display: grid;
+  row-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.calculadora_container_accion {
+  display: grid;
+  row-gap: 10px;
+}
+
+.btn {
+  font-size: 40px;
+  width: 70px;
+  height: 70px;
+  background-color: var(--btn-color);
+  color: var(--text-color);
+  font-weight: 800;
+  border-radius: 10px;
+}
+
+.btnAccion {
+  background-color: var(--btn-accion);
+}
+
+.btnIgual {
+  background-color: var(--btn-igual);
+}
+
+.btnClear {
+  width: 70px;
+  height: 30px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
